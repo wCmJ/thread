@@ -1,0 +1,23 @@
+to the software developer, the concept of a "procedure" that runs independently from its main program may best describe a thread.
+A UNIX process, is created by the operating system, and requires a fair amount of "overhead".
+Processes contain information about program resources and program execution state, including:
+    Process ID, process group ID, user ID, and group ID
+    Environment
+    Working directory
+    Program instructions
+    Registers
+    Stack
+    Heap
+    File descriptiors
+    Signal actions
+    Shared libraries
+    Inter-process communication tools(such as message queues, pipes, semaphores, or shared memory)
+    
+Mutexes: Routines that deal with synchronization, called a "mutex", which is an abbreviation for "mutual exclusion"
+         Mutex functions provide for creating, destroying, locking and unlocking mutexes.
+Condition variables: Routines that address communications between threads that share a mutex. Based upon programmer specified conditions.
+                     this group includes functions to create, destroy, wait and signal based upon specified variable values.
+Synchronization: Routines that manage read/write locks and barriers.
+
+
+
