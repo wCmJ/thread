@@ -1,0 +1,24 @@
+os maintains a table called the process table, with one entry per process.
+entry contains important information about the process's state:
+    1.program counter
+    2.stack pointer
+    3.memory allocation
+    4.the status of its open files, its accounting and scheduling information
+    5.everything else about the process that must be saved when the process is switched from running to ready or blocked state
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
