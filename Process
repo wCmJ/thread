@@ -8,9 +8,26 @@ entry contains important information about the process's state:
     
     
 
+Process contains information about program resources and program execution state, including:
+    process ID, process group ID, user ID, group ID
+    Environment
+    working directory
+    program instructions
+    registers
+    stack
+    heap
+    file descriptors
+    signal actions
+    shared libraries
+    IPC tools(message queues, pipes, semaphores, shared memory)
 
-
-
+Thread:
+    stack pointer
+    registers
+    scheduling properties
+    set of pending and blocked signals
+    thread specific data
+    
 
 
 
