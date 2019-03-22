@@ -1,0 +1,21 @@
+problems of fork():
+1.  fork is expensive. 
+    descriptors are duplicated.
+    regardless of COW, fork is expensive
+2.  IPC
+    return information from child to the parent takes more work
+
+we get thread
+1.  creation is 10-100 times faster than process creation
+2.  information share become easy
+
+got problem too:
+    synchronization between shared source
+every thread has:
+    thread ID
+    PC and SP
+    stack(for local variables and return addresses)
+    
+
+
+
