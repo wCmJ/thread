@@ -2,7 +2,7 @@ Windows:
 1.mutex(HANDLE)
     mutex = CreateMutex(NULL, FALSE, NULL);
     WaitForSingleObject(mutex, INFINITE);
-    ReleaseMutex(mutex);
+    ReleaseMutex(mutex); //Releases ownership of the specified mutex object.
 WINBASEAPI
 __out_opt
 HANDLE
@@ -18,8 +18,8 @@ CreateMutexW(
 
 2.event(HANDLE)
     event = CreateEvent(NULL, false, false, "");
-    SetEvent(event);
-    ResetEvent(event);
+    SetEvent(event); //Sets the specified event object to the signaled state.
+    ResetEvent(event); //Sets the specified event object to the nonsignaled state.
     WaitForSingleObject(event,INFINITE);
     CloseHandle(event);
 WINBASEAPI
@@ -42,7 +42,8 @@ CreateEventW(
 
 4.semaphore(HANDLE)
     semaphore = CreateSemaphore(NULL, 0, LONG_MAX, NULL);
-    ReleaseSemaphore(semaphore,1,NULL);
+    ReleaseSemaphore(semaphore,1,NULL); //Increases the count of the specified semaphore object by a specified amount.
+
     
     CloseHandle(semaphore);
     
